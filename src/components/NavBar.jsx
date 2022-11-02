@@ -40,7 +40,7 @@ export const NavBar = () => {
                 </div>
 
                 {/* if nav es not true , se muestra la navbar replegada, de lo contrario la escondemos */}
-                <div className={!nav ? 'fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-black ease-in-out duration-500' : 'fixed left-[-100%] '}>
+                <div className={!nav ? 'fixed left-0 top-0 w-[60%] h-[450px] border-r border-r-gray-900 bg-slate-900 ease-in-out duration-500' : 'fixed left-[-100%] '}>
                     <h1 className='w-full text-3xl font-bold text-green-400 m-4 p-4'>Shop.</h1>
                     <ul className=' uppercase  p-4'>
                         <li className='p-4 font-medium text-xl border-b border-gray-600'>
