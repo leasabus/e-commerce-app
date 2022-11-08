@@ -2,9 +2,12 @@
 import { useState } from 'react';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import { BsFillCartPlusFill } from 'react-icons/bs';
+import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 
 export const NavBar = () => {
+
+    const { cartTotalQuantity } = useSelector(state => state.cart)
 
     const [nav, setNav] = useState(true);
 
@@ -34,7 +37,7 @@ export const NavBar = () => {
                     <li className='p-4 font-medium text-2xl  '>
                         <div className='flex flex-row items-center justify-center'>
                             <Link to='cart'>  <BsFillCartPlusFill /> </Link>
-                            <span className='text-small text-red-600 text-[20px]'>0</span>
+                            <span className='text-small text-red-600 text-[20px]'>{cartTotalQuantity}</span>
                         </div>
                     </li>
                 </ul>
@@ -64,7 +67,7 @@ export const NavBar = () => {
                             <li className='p-4 font-medium text-xl border-b border-gray-600'>
                                 <div className='flex flex-row '>
                                     <Link to='cart'>  <BsFillCartPlusFill /> </Link>
-                                    <span className='text-small text-red-600 text-[20px]'>0</span>
+                                    <span className='text-small text-red-600 text-[20px]'>{cartTotalQuantity}</span>
                                 </div>
 
                             </li>

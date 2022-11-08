@@ -1,7 +1,7 @@
 
 import React, { useContext } from 'react'
 import { useDispatch } from 'react-redux';
-import { Link, NavLink, useParams } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { ApiContext } from '../context/ApiContext';
 import { addToCart } from '../redux/cartSlice';
 
