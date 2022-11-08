@@ -20,21 +20,21 @@ export const NavBar = () => {
 
     return (
         <>
-            <div className='bg-black text-white flex justify-between items-center h-24 max-w-[1240px] mx-auto px-6'>
+            <div className='bg-black text-white flex justify-between items-center h-24 max-w-[1240px] mx-auto px-6 '>
 
                 <h1 className='w-full text-3xl font-bold text-green-400'>E-Shop.</h1>
-                <ul className='hidden md:flex'>
-                    <li className='p-4 font-medium text-xl'>
+                <ul className='hidden md:flex '>
+                    <li className='p-4 font-medium text-xl hover:text-green-400'>
                         <Link to="home">Home</Link>
                     </li>
-                    <li className='p-4 font-medium text-xl'>
+                    <li className='p-4 font-medium text-xl hover:text-green-400'>
                         <Link to='products'>Products</Link>
                     </li>
 
-                    <li className='p-4 font-medium text-xl'>
+                    <li className='p-4 font-medium text-xl hover:text-green-400'>
                         <Link to='contact'>Contact</Link>
                     </li>
-                    <li className='p-4 font-medium text-2xl  '>
+                    <li className='p-4 font-medium text-2xl  hover:text-green-400 '>
                         <div className='flex flex-row items-center justify-center'>
                             <Link to='cart'>  <BsFillCartPlusFill /> </Link>
                             <span className='text-small text-red-600 text-[20px]'>{cartTotalQuantity}</span>

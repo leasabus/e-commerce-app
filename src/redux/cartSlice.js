@@ -102,7 +102,7 @@ const cartSlice = createSlice({
 
 
             state.cartTotalQuantity = quantity;
-            state.cartTotalAmmount = total;
+            state.cartTotalAmmount = total.toFixed(2);
 
 
         }

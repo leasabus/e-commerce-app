@@ -27,6 +27,7 @@ export const CartComponent = () => {
         dispatch(decreaseCart(cartItems))
     }
     const handleIncreaseCart = (cartItems) => {
+
         dispatch(addToCart(cartItems))
     }
 

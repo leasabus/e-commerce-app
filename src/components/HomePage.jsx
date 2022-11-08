@@ -10,7 +10,7 @@ export const HomePage = () => {
                 <h2 className='text-white md:text-7xl sm:text-6xl text-4xl   font-large pt-2'>The best choice.</h2>
                 <h1 className='md:text-5xl sm:text-3xl text-2xl pt-2'>Fast, Security, Quality for <span className='text-gray-500'>
                     <Typed
-                        strings={['Shoes', 'Shirts', 'Tech', 'Jewerly']}
+                        strings={['Shirts', 'Electronics', 'Jewelery']}
                         typeSpeed={40}
                         backSpeed={60}
                         loop /></span></h1>

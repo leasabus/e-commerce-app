@@ -26,7 +26,7 @@ export const CardProduct = () => {
                             <img src={product.image} alt="products" className='w-32 h-44 m-2' />
                             <h1 className='pt-1'> {product.title.substring(0, 15)}...</h1>
                             <p className='pt-1'>Category : {product.category}</p>
-                            <p className='pt-1'>Price : {product.price}$</p>
+                            <p className='pt-1'>Price : {product.price.toFixed(0)}$</p>
                             <p className='pt-1'>Rating : {product.rating.rate}</p>
 
                             <div className='flex justify-center items-center p-2 '>
